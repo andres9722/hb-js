@@ -4,9 +4,8 @@ let generateRandomColor = () => {
     let r = Math.trunc(Math.random() * 255),
         g = Math.trunc(Math.random() * 255),
         b = Math.trunc(Math.random() * 255),
-        json =  {
-            r, g, b
-        }
+        json =  { r, g, b }
+        
         return json
 }
 
