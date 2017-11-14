@@ -37,7 +37,7 @@ let filterNegativeNumbers = vec => {
         let elements = []
         for (let i = 0; i < vec.length; i++) {
             if(vec[i] >= 0) {
-                elements[i] = vec[i];
+                elements.push(vec[i]);
             }
         }
         return elements
