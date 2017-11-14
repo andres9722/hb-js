@@ -77,11 +77,15 @@ let printType = data => {
 
 let data = 2
 let type = printType(data)
-console.log('Type of: ', data, typeof data)
+console.log('Type of: ', data, type)
 
 let twoData = 'Hola'
 let type2 = printType(twoData)
-console.log('Type of: ', twoData, typeof twoData)
+console.log('Type of: ', twoData, type2)
+
+let threeData = true
+let type3 = printType(threeData)
+console.log('Type of: ', threeData, type3)
 
 /////////////////////////////////////////////////////////
 
