@@ -16,12 +16,9 @@ console.log('Generate random color:', color)
 /////////////////////////////////////////////////////////
 
 let functionalFilterNegativeNumbers = vec => {
-    if(vec.length == 0) {
-        console.log('Array empty')
-    } else {
-        let n = vec.filter(num => num >= 0)
-        return n
-    }  
+    let n = vec.filter(num => num >= 0)
+    
+    return n
 }
 
 let vecFilter = [1, -2, 3, -4, 5, 7]
@@ -31,17 +28,14 @@ console.log('Filter negative numbers:', filter)
 /////////////////////////////////////////////////////////
 
 let filterNegativeNumbers = vec => {
-    if(vec.length == 0) {
-        console.log('Array empty')
-    } else {
-        let elements = []
-        for (let i = 0; i < vec.length; i++) {
-            if(vec[i] >= 0) {
-                elements.push(vec[i]);
-            }
+    let elements = []
+    for (let i = 0; i < vec.length; i++) {
+        if(vec[i] >= 0) {
+            elements.push(vec[i]);
         }
-        return elements
-    } 
+    }
+
+    return elements
 }
 
 let vecFilterFor = [1, -2, 3, -4, 5, 7]
@@ -51,12 +45,9 @@ console.log('Filter negative numbers with for:', filterFor)
 /////////////////////////////////////////////////////////
 
 let functionalMapNumbersIntoStrings = vec => {
-    if(vec.length == 0) {
-        console.log('Array empty')
-    } else {
-        let n = vec.map(num => num.toString())
-        return n
-    } 
+    let n = vec.map(num => num.toString())
+
+    return n
 }
 
 let vecString = [1, -2, 3, -4, 5]
@@ -66,15 +57,12 @@ console.log('map numbers to string:', map)
 /////////////////////////////////////////////////////////
 
 let mapNumbersIntoStrings = vec => {
-    if(vec.length == 0) {
-        console.log('Array empty')
-    } else {
-        let elements = []
-        for (let i = 0; i < vec.length; i++) {
-            elements.push(vec[i].toString())
-        }
-        return elements
+    let elements = []
+    for (let i = 0; i < vec.length; i++) {
+        elements.push(vec[i].toString())
     }
+
+    return elements 
 }
 
 let vecStringFor = [1, -2, 3, -4, 5]
