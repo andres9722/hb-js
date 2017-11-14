@@ -71,7 +71,7 @@ let mapNumbersIntoStrings = vec => {
     } else {
         let elements = []
         for (let i = 0; i < vec.length; i++) {
-            elements[i] = vec[i].toString();
+            elements.push(vec[i].toString())
         }
         return elements
     }
