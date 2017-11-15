@@ -12,8 +12,6 @@ let generateRandomColor = () => {
 let color = generateRandomColor()
 console.log('Generate random color:', color)
 
-/////////////////////////////////////////////////////////
-
 let functionalFilterNegativeNumbers = vec => {
     let n = vec.filter(num => num >= 0)
     
@@ -23,8 +21,6 @@ let functionalFilterNegativeNumbers = vec => {
 let vecFilter = [1, -2, 3, -4, 5, 7]
 let filter = functionalFilterNegativeNumbers(vecFilter)
 console.log('Filter negative numbers:', filter)
-
-/////////////////////////////////////////////////////////
 
 let filterNegativeNumbers = vec => {
     let elements = []
@@ -41,8 +37,6 @@ let vecFilterFor = [1, -2, 3, -4, 5, 7]
 let filterFor = filterNegativeNumbers(vecFilterFor)
 console.log('Filter negative numbers with for:', filterFor) 
 
-/////////////////////////////////////////////////////////
-
 let functionalMapNumbersIntoStrings = vec => {
     let n = vec.map(num => num.toString())
 
@@ -52,8 +46,6 @@ let functionalMapNumbersIntoStrings = vec => {
 let vecString = [1, -2, 3, -4, 5]
 let map = functionalMapNumbersIntoStrings(vecString)
 console.log('map numbers to string:', map)
-
-/////////////////////////////////////////////////////////
 
 let mapNumbersIntoStrings = vec => {
     let elements = []
@@ -68,40 +60,33 @@ let vecStringFor = [1, -2, 3, -4, 5]
 let mapFor = mapNumbersIntoStrings(vecStringFor)
 console.log('map numbers to string with for:', mapFor)
 
-/////////////////////////////////////////////////////////
-
 let printType = data => {
-    return typeof data
+    console.log(typeof data)
 }
 
 let data = 2
 let type = printType(data)
-console.log('Type of: ', data, type)
 
 let twoData = 'Hola'
 let type2 = printType(twoData)
-console.log('Type of: ', twoData, type2)
 
 let threeData = true
 let type3 = printType(threeData)
-console.log('Type of: ', threeData, type3)
-
-/////////////////////////////////////////////////////////
 
 let isPalindrome = str => {
-    return str == str.split('').reverse().join('');
+    let pal = str.replace(/\s/g,'').toLowerCase()
+    let cleanString = pal.replace(/[\|&;\$%@"<>\(\)\+,*]/g, "")
+    return cleanString == cleanString.split('').reverse().join('')
 }
 
-let one = 'anitalavalatina'
+let one = 'Anita &LAva *la tina'
 console.log(`${one}: `, isPalindrome(one))
 
-let two = 'oso'
+let two = 'o**so'
 console.log(`${two}: `, isPalindrome(two))
 
-let three = 'perro'
+let three = 'per//ro'
 console.log(`${three}: `, isPalindrome(three))
-
-/////////////////////////////////////////////////////////
 
 class Person {
     constructor(name, age) {
